@@ -4,10 +4,14 @@ body{
     padding: 0;
     background: #f4f6fa;
     color: #222;
+    background-image: url("https://image.slidesdocs.com/responsive-images/background/geometric-grey-mosaic-with-triangular-polygons-illustrative-design-powerpoint-background_b968966550__960_540.jpg");
 }
 header {
     background: #0057b8;
     color: white;
+    background: url("https://img.freepik.com/foto-gratis/fondo-tecnologia-blockchain-azul-gradiente_53876-124646.jpg?semt=ais_hybrid&w=740&q=80");
+    background-position: center;
+    background-size: ;
 }
 nav{
     display: flex;
@@ -17,6 +21,9 @@ nav{
 nav h1{
     margin: 0 0 1rem 0;
     font-size: 2.2rem;
+}
+nav h2{
+    color: white;
 }
 nav ul{
     list-style: none;
@@ -44,7 +51,7 @@ section{
     margin-bottom: 2.5rem;
 }
 h2{
-    color: cyan;
+    color: black;
     margin-top: 0;
 }
 footer{
