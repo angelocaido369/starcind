@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="bg-light p-4 small">
+    <div class="container bg-white p-4 rounded-3 shadow-lg">
+        <h1 class="text-center text-white bg-primary bg-opacity-75 mb-4 fw-bold display-4 p-2 small">
+            Pagina Bootstrap</h1>
+        <h2 class="text-dark text-start mt-4 border-bottom border-2 pb-2 fw-semibold">Grilla de Bootstrap</h2>
+        <div class="mt">
+            <div class="row g-2 mb-3">
+
+                <div class="row g-2 mb-3">
+                    <div class="col-3">
+                        <div class="bg-primary text-white border border-secondary rounded p-3 text-center fw-bold">col
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="bg-secondary text-white border border-secondary rounded p-3 text-center fw-bold">
+                            col</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="bg-success text-white border border-secondary rounded p-3 text-center fw-bold">col
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-2 mb-3">
+                <div class="col-4">
+                    <div class="bg-light border border-secondary rounded p-3 text-center fw-bold">col-4</div>
+                </div>
+                <div class="col-8">
+                    <div class="bg-light border border-secondary rounded p-3 text-center fw-bold">col-8</div>
+                </div>
+            </div>
+            <div class="row g-2 mb-3">
+                <div class="col-6">
+                    <div class="bg-light border border-secondary rounded p-3 text-center fw-bold">col-6</div>
+                </div>
+            </div>
+            <div class="row g-2 mb-3">
+                <div class="col-3">
+                    <div class="bg-light border border-secondary rounded p-3 text-center fw-bold">col-3</div>
+                </div>
+                <div class="col-1">
+                    <div class="bg-light border border-secondary rounded p-3 text-center fw-bold">col-1</div>
+                </div>
+                <div class="col-2">
+                    <div class="bg-light border border-secondary rounded p-3 text-center fw-bold">col-2</div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-dark mt-5 border-bottom border-2 pb-2 fw-semibold">Componentes de Bootstrap</h2>
+        <div class="row">
+        <h3 class="text-dark mt-3 fw-semibold">Componente Carousel</h3>
+        <div id="miCarrusel" class="carousel slide mt-3 rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="0" class="active bg-primary"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="1" class="bg-primary"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://tugranviaje.com/wp-content/uploads/2021/08/takahiro-taguchi-8F59AdH6WKk-unsplash.jpg"
+                        class="d-block w-100" alt="Paisaje Japón 1" style="height: 450px; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4 mb-3">
+                        <h5 class="text-white fw-bold fs-4">Descripción Imagen 1 - Accordion Item #1</h5>
+                        <p class="text-white small">Noches Estrelladas en Japon. Las noches en el Japón antiguo estaban
+                            marcadas por la oscuridad natural, iluminadas apenas por faroles de papel (chochin) y velas,
+                            creando una atmósfera misteriosa y serena. Las actividades nocturnas giraban en torno a
+                            festivales estacionales (Obon), la contemplación de la luna, el teatro tradicional y el
+                            descanso temprano, con una fuerte conexión espiritual.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.nippon.com/es/ncommon/contents/guide-to-japan/187267/187267.jpg"
+                        class="d-block w-100" alt="Paisaje Japón 2" style="height: 450px; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4 mb-3">
+                        <h5 class="text-white fw-bold fs-4">Descripción Imagen 2 - Accordion Item #2</h5>
+                        <p class="text-white small">#</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark bg-opacity-25 rounded-circle p-3"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark bg-opacity-25 rounded-circle p-3"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <h4 class="text-secondary mt-4 fw-semibold">Componente Accordion</h4>
+        <div class="accordion mt-3 shadow-sm" id="accordionEjemplo">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-light fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Descripción Imagen 1 - Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionEjemplo">
+                    <div class="accordion-body bg-white">
+                        Noches Estrelladas en Japon. Las noches en el Japón antiguo estaban marcadas por la oscuridad
+                        natural, iluminadas apenas por faroles de papel (chochin) y velas, creando una atmósfera
+                        misteriosa y serena. Las actividades nocturnas giraban en torno a festivales estacionales
+                        (Obon), la contemplación de la luna, el teatro tradicional y el descanso temprano, con una
+                        fuerte conexión espiritual.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-light fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Descripción Imagen 2 - Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionEjemplo">
+                    <div class="accordion-body bg-white">
+                        #
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer class="mt-5 pt-4 border-top border-2 text-center">
+            <p class="text-secondary fw-semibold fs-5">© 2025 Ciencialink Bolivia</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
