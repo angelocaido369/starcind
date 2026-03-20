@@ -11,7 +11,7 @@ document.querySelector('a[href="#quienes-somos"]').addEventListener('click', fun
 document.querySelectorAll('.btn-warning').forEach(function (btn) {
     btn.addEventListener('click', function (e) {
        // e.preventDefault(); // Evita el comportamiento predeterminado del enlace
-        const servicio = btn.closest('.card').querySelector('.card-title').textContent; // Obtiene el nombre del servicio
+        const servicio = btn.closest('.card').querySelector('.card-text').textContent; // Obtiene el nombre del servicio
         alert('Solicitando informacion sobre: '+ servicio);
     });
 });
