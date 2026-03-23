@@ -1,4 +1,16 @@
-window.onload = function () {
+let darkmode = false;
+document.querySelector('a[href="#darkmode"]').addEventListener('click', function (event) {
+    if (darkmode) {
+        document.body.style.backgroundColor = '#ffffff'; // Cambia el fondo a un color suave
+        document.body.style.color = 'black'; // Cambia el color del texto a blanco
+    } else {
+        document.body.style.backgroundColor = '#343a40'; // Cambia el fondo a un color suave
+        document.body.style.color = 'white'; // Cambia el color del texto a blanco
+    }
+    darkmode = !darkmode; // Cambia el estado de la bandera
+});
+
+/*window.onload = function () {
     alert("Bienvenido a STARCIND - Agencia de Marketing Digital");
     alert("¡Explora nuestros servicios y descubre cómo podemos ayudarte a crecer tu negocio en línea!");
 };
@@ -24,4 +36,4 @@ document.querySelectorAll('.btn-danger').forEach(function (btn) {
             window.location.href = btn.getAttribute('href'); // Redirige después de mostrar el mensaje
         }, 2000); // Espera 2 segundos antes de redirigir
     });
-});
+});*/
